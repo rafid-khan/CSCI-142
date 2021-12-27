@@ -1,0 +1,25 @@
+CSCI-142 Lab 7: Connect Four
+
+Answer each of the following questions regarding the design of this application.
+
+1. In terms of MVC, which part does ConnectFourBoard represent?
+- In terms of MVC, ConnectFourBoard represents the Model. This means that it gets and
+  manipulates data, but is not aware of the view. Since it's the model, it will also
+  communicate with the controller.
+
+2. In terms of MVC, which *parts* do ConnectFourGUI and ConnectFourPTUI represent?
+- In terms of MVC, ConnectFourGUI represents the View, which means it is responsible for
+  what the user sees when they interact with the application. Like the Model, it also
+  communicates with the controller.
+
+- ConnectFourPTUI represents the Controller. This means that it gets data from the
+  Model, and passes this data to the View. It also handles exceptions.
+
+3. What interface/method must ConnectFourGUI implement?
+- Since ConnectFourGUI represents the View, it must build an interface exactly the way
+  it would appear to the user. This includes things such as the Stage, Scene, Layout, and
+  all associated objects.
+
+4. What method in ConnectFourBoard is used to call into ConnectFourGUI when the board changes?
+- getContents() and makeMove() in ConnectFourBoard is used to call into ConnectFourGUI when the
+  board changes.
